@@ -25,7 +25,14 @@ export default function TerminosPage() {
           </div>
         </div>
       </main>
-      <Footer />
+      <Footer
+        businessName="Mantra Spa"
+        tagline="Bienestar y Relax en Concepción"
+        address="Concepción"
+        phone="0981 000 002"
+        hours="Lun-Sáb: 10:00 - 20:00"
+        waPhone="595981000002"
+      />
       <WhatsAppFloat />
     </>
   )
