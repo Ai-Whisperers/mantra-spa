@@ -1,10 +1,17 @@
-import type { Metadata } from "next";
-import "./globals.css";
+import type { Metadata } from "next"
+import "./globals.css"
 
 export const metadata: Metadata = {
   title: "Mantra Spa — Bienestar y Relax en Concepción",
   description: "Masajes relajantes, tratamientos corporales y experiencias de bienestar únicas",
-};
+  icons: { icon: "/favicon.ico" },
+  openGraph: {
+    title: "Mantra Spa — Bienestar y Relax en Concepción",
+    description: "Masajes relajantes, tratamientos corporales y experiencias de bienestar únicas",
+    locale: "es_PY",
+    type: "website",
+  },
+}
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -16,5 +23,5 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body className="font-body antialiased bg-background text-foreground">{children}</body>
     </html>
-  );
+  )
 }
