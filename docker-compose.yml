@@ -6,24 +6,26 @@ services:
       - "3000"
     networks:
       - agent-net
+    environment:
+      - NODE_ENV=production
     deploy:
       mode: replicated
       replicas: 2
       resources:
         limits:
-          memory: 512M
           cpus: '0.5'
+          memory: 512M
         reservations:
-          memory: 128M
           cpus: '0.1'
+          memory: 128M
       labels:
         - "traefik.enable=true"
         - "traefik.docker.network=agent-net"
-        - "traefik.http.routers.mantra-spa.rule=Host(`mantra-spa.paragu-ai.com`)"
-        - "traefik.http.routers.mantra-spa.entrypoints=websecure"
-        - "traefik.http.routers.mantra-spa.tls=true"
-        - "traefik.http.routers.mantra-spa.tls.certresolver=letsencryptresolver"
-        - "traefik.http.services.mantra-spa.loadbalancer.server.port=3000"
+        - "traefik.http.routers.mantra.entrypoints=websecure"
+        - "traefik.http.routers.mantra.rule=Host(`mantraspa.paragu-ai.com`)"
+        - "traefik.http.routers.mantra.tls=true"
+        - "traefik.http.routers.mantra.tls.certresolver=letsencryptresolver"
+        - "traefik.http.services.mantra.loadbalancer.server.port=3000"
     healthcheck:
       test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://127.0.0.1:3000/"]
       interval: 30s
