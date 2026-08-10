@@ -1,6 +1,6 @@
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
-import { WhatsAppFloat } from "@/components/whatsapp-float"
+import { MessagingFloat } from "@/components/messaging-float"
 import { MapPin, Phone, Clock, MessageCircle } from "lucide-react"
 
 export const metadata = { title: "Contacto — Mantra Spa" }
@@ -38,12 +38,12 @@ export default function ContactoPage() {
               </div>
             </div>
             <div className="bg-white rounded-xl border border-border p-8 shadow-sm">
-              <h2 className="font-heading text-xl font-bold text-primary mb-4">Escribinos por WhatsApp</h2>
+              <h2 className="font-heading text-xl font-bold text-primary mb-4">Escribinos por Messaging</h2>
               <p className="text-foreground-light mb-6">Respondemos en menos de 5 minutos</p>
-              <a href="https://wa.me/595981000002?text=Hola!%20Quiero%20informaci%C3%B3n"
+              <a href="tel:+595981000002?text=Hola!%20Quiero%20informaci%C3%B3n"
                 target="_blank" rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-secondary text-white px-6 py-3 rounded-lg font-semibold hover:bg-secondary-dark transition-all">
-                <MessageCircle className="w-5 h-5" /> Contactar por WhatsApp
+                <MessageCircle className="w-5 h-5" /> Contactar por Messaging
               </a>
             </div>
           </div>
@@ -57,7 +57,7 @@ export default function ContactoPage() {
         hours="Lun-Sáb: 10:00 - 20:00"
         waPhone="595981000002"
       />
-      <WhatsAppFloat />
+      <MessagingFloat />
     </>
   )
 }

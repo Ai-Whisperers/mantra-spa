@@ -1,6 +1,6 @@
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
-import { WhatsAppFloat } from "@/components/whatsapp-float"
+import { MessagingFloat } from "@/components/messaging-float"
 
 export const metadata = { title: "Términos y Condiciones — Mantra Spa" }
 
@@ -16,7 +16,7 @@ export default function TerminosPage() {
             <h2 className="font-heading text-xl font-bold text-foreground">Servicios</h2>
             <p>Nos reservamos el derecho de modificar nuestros servicios, precios y horarios sin previo aviso. Todos los precios están expresados en guaraníes (Gs.) e incluyen IVA.</p>
             <h2 className="font-heading text-xl font-bold text-foreground">Reservas y cancelaciones</h2>
-            <p>Las reservas se confirman vía WhatsApp. Cancelaciones con menos de 2 horas de anticipación pueden estar sujetas a cargos.</p>
+            <p>Las reservas se confirman vía Messaging. Cancelaciones con menos de 2 horas de anticipación pueden estar sujetas a cargos.</p>
             <h2 className="font-heading text-xl font-bold text-foreground">Responsabilidad</h2>
             <p>Mantra Spa no se responsabiliza por objetos personales perdidos en nuestras instalaciones. Los clientes son responsables de su propia seguridad durante la utilización de nuestros servicios.</p>
             <h2 className="font-heading text-xl font-bold text-foreground">Modificaciones</h2>
@@ -33,7 +33,7 @@ export default function TerminosPage() {
         hours="Lun-Sáb: 10:00 - 20:00"
         waPhone="595981000002"
       />
-      <WhatsAppFloat />
+      <MessagingFloat />
     </>
   )
 }

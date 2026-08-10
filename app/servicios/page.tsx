@@ -1,7 +1,7 @@
 import { Header } from "@/components/header";
 import { Services } from "@/components/services";
 import { Footer } from "@/components/footer";
-import { WhatsAppFloat } from "@/components/whatsapp-float";
+import { MessagingFloat } from "@/components/messaging-float";
 
 export const metadata = { title: "Servicios — Mantra Spa", description: "Conocé todos nuestros servicios con precios y duración." };
 
@@ -18,7 +18,7 @@ export default function ServiciosPage() {
         hours="Lun-Sáb: 10:00 - 20:00"
         waPhone="595981000002"
       />
-      <WhatsAppFloat />
+      <MessagingFloat />
     </>
   );
 }

@@ -1,11 +1,11 @@
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
-import { WhatsAppFloat } from "@/components/whatsapp-float"
+import { MessagingFloat } from "@/components/messaging-float"
 import { ChevronDown } from "lucide-react"
 
 export const metadata = { title: "Preguntas Frecuentes — Mantra Spa" }
 
-const faqs = [{'q': '¿Cuáles son los horarios?', 'a': 'Lunes a sábado de 10:00 a 20:00. Domingos cerrado.'}, {'q': '¿Necesito reservar?', 'a': 'Sí, todos nuestros servicios son con cita previa. Reservá por WhatsApp.'}, {'q': '¿Qué tratamientos ofrecen?', 'a': 'Masajes relajantes, descontracturantes, tratamientos faciales, corporales y paquetes de bienestar.'}, {'q': '¿Cuánto duran las sesiones?', 'a': 'Los masajes duran entre 45 y 90 minutos según el tipo de tratamiento.'}, {'q': '¿Tienen gift cards?', 'a': 'Sí, ofrecemos gift cards para regalar experiencias de bienestar.'}]
+const faqs = [{'q': '¿Cuáles son los horarios?', 'a': 'Lunes a sábado de 10:00 a 20:00. Domingos cerrado.'}, {'q': '¿Necesito reservar?', 'a': 'Sí, todos nuestros servicios son con cita previa. Reservá por Messaging.'}, {'q': '¿Qué tratamientos ofrecen?', 'a': 'Masajes relajantes, descontracturantes, tratamientos faciales, corporales y paquetes de bienestar.'}, {'q': '¿Cuánto duran las sesiones?', 'a': 'Los masajes duran entre 45 y 90 minutos según el tipo de tratamiento.'}, {'q': '¿Tienen gift cards?', 'a': 'Sí, ofrecemos gift cards para regalar experiencias de bienestar.'}]
 
 export default function FAQPage() {
   return (
@@ -36,7 +36,7 @@ export default function FAQPage() {
         hours="Lun-Sáb: 10:00 - 20:00"
         waPhone="595981000002"
       />
-      <WhatsAppFloat />
+      <MessagingFloat />
     </>
   )
 }
