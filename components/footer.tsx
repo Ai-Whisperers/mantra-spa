@@ -19,7 +19,7 @@ export function Footer({
   waPhone = "",
 }: FooterProps) {
   const waMsg = "Hola!%20Quiero%20m%C3%A1s%20informaci%C3%B3n"
-  const waLink = waPhone ? `https://wa.me/${waPhone}?text=${waMsg}` : "#"
+  const waLink = waPhone ? `tel:+${waPhone}?text=${waMsg}` : "#"
 
   return (
     <footer className="bg-primary py-12 text-white">
@@ -55,7 +55,7 @@ export function Footer({
               {waPhone && (
                 <a href={waLink} target="_blank" rel="noopener noreferrer"
                   className="inline-block mt-2 text-secondary hover:text-secondary-dark transition-colors font-medium">
-                  WhatsApp
+                  Messaging
                 </a>
               )}
             </div>

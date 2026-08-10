@@ -3,7 +3,7 @@ import { Hero } from "@/components/hero"
 import { Services } from "@/components/services"
 import { CtaBanner } from "@/components/cta-banner"
 import { Footer } from "@/components/footer"
-import { WhatsAppFloat } from "@/components/whatsapp-float"
+import { MessagingFloat } from "@/components/messaging-float"
 
 export default function Home() {
   return (
@@ -23,7 +23,7 @@ export default function Home() {
         hours="Lun-Sáb: 10:00 - 20:00"
         waPhone="595981000002"
       />
-      <WhatsAppFloat />
+      <MessagingFloat />
     </>
   )
 }

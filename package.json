@@ -27,7 +27,7 @@
     "@ai-whisperers/seo": "^0.2.1",
     "@ai-whisperers/theme": "^0.3.0",
     "@ai-whisperers/ui": "^0.4.1",
-    "@ai-whisperers/whatsapp": "^0.3.0",
+    "@ai-whisperers/messaging": "^0.3.0",
     "@ai-whisperers/content": "^0.3.0"
   },
   "devDependencies": {
@@ -55,6 +55,6 @@
     "@ai-whisperers/seo": "^0.1.0",
     "@ai-whisperers/theme": "^0.1.0",
     "@ai-whisperers/ui": "^0.1.0",
-    "@ai-whisperers/whatsapp": "^0.1.0"
+    "@ai-whisperers/messaging": "^0.1.0"
   }
 }

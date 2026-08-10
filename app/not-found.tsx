@@ -1,6 +1,6 @@
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
-import { WhatsAppFloat } from "@/components/whatsapp-float"
+import { MessagingFloat } from "@/components/messaging-float"
 import Link from "next/link"
 
 export const metadata = { title: "Página no encontrada — Mantra Spa" }
@@ -27,7 +27,7 @@ export default function NotFound() {
         hours=""
         waPhone="595981000002"
       />
-      <WhatsAppFloat />
+      <MessagingFloat />
     </>
   )
 }

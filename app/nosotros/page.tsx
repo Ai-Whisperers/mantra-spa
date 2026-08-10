@@ -1,6 +1,6 @@
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
-import { WhatsAppFloat } from "@/components/whatsapp-float"
+import { MessagingFloat } from "@/components/messaging-float"
 import { Sparkles, Shield, Users, Award } from "lucide-react"
 
 export const metadata = { title: "Nosotros — Mantra Spa" }
@@ -41,7 +41,7 @@ export default function NosotrosPage() {
         hours="Lun-Sáb: 10:00 - 20:00"
         waPhone="595981000002"
       />
-      <WhatsAppFloat />
+      <MessagingFloat />
     </>
   )
 }
